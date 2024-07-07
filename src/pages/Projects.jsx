@@ -1,7 +1,6 @@
 import React from "react"
 import {
     Card,
-    Paper,
     Typography,
     Grid,
     CardMedia,
@@ -32,6 +31,7 @@ const cards = [
             'Collection and analysis of race data',
             'Chassis improvements'
         ],
+        height: 170,
         isCurrent: true
     },
     {
@@ -44,6 +44,7 @@ const cards = [
             'Purchasing and installing a motor and controller',
             'Stripping and getting the frame painted'
         ],
+        height: 170,
         isCurrent: true
     },
     {
@@ -58,6 +59,7 @@ const cards = [
             'Custom brake caliper mount design',
             'Carbon fibre side panels'
         ],
+        height: 230,
         isCurrent: false
     },
     {
@@ -69,6 +71,7 @@ const cards = [
             'Create a full 3D model of bike using SolidWorks',
             'Designing and implementing data acquisition system to measure bike performance'
         ],
+        height: 230,
         isCurrent: false
     }
 ]
@@ -99,14 +102,16 @@ function Projects() {
     };
 
     return (
-        <Paper elevation={0} sx={{ borderRadius: 0, padding: 3, bgcolor: '#eceff1' }}>
-            <Typography variant="h4" align="left" gutterBottom>
-                Our projects
-            </Typography>
-            <Divider sx={{ marginBottom: 2 }} />
-            <Grid container spacing={2}>
+        <Grid container sx={{ borderRadius: 0, padding: 3, bgcolor: '#eceff1' }} justifyContent="center">
+            <Grid item xs={12} md={10}>
+                <Typography variant="h4" align="left" gutterBottom>
+                    Our projects
+                </Typography>
+                <Divider sx={{ marginBottom: 2 }} />
+            </Grid>
+            <Grid container spacing={2} justifyContent="center">
                 {cards.map((card, index) => (
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={5}>
                         <Card elevation={3} sx={{ height: 'auto' }}>
                             <CardMedia
                                 component="img"
@@ -114,7 +119,7 @@ function Projects() {
                                 image={card.image}
                                 alt={card.title}
                             />
-                            <CardContent sx={{ height: { xs: 'auto', md: 200 } }}>
+                            <CardContent sx={{ height: { xs: 'auto', md: card.height } }}>
                                 <Typography gutterBottom variant="h5" component="div">
                                     {card.title}
                                 </Typography>
@@ -153,7 +158,7 @@ function Projects() {
                     </Grid>
                 ))}
             </Grid>
-        </Paper>
+        </Grid>
     )
 }
 

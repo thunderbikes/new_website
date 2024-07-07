@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    Paper,
+    Grid,
     Typography,
     Divider,
     Box,
@@ -255,46 +255,50 @@ const members = [
 
 function Members() {
     return (
-        <Paper elevation={3} sx={{ borderRadius: 0, padding: 3, bgcolor: '#eceff1', marginTop: '10vh' }} id='members'>
-            <Typography variant="h4" align="left" gutterBottom>
-                Meet our team
-            </Typography>
-            <Divider sx={{ marginBottom: 2 }} />
-            <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', marginBottom: 2 }}>
-                <Typography variant="h5" gutterBottom>
-                    Captain
+        <Grid container sx={{ borderRadius: 0, padding: 3, bgcolor: '#eceff1', marginTop: '10vh' }} justifyContent={'center'}>
+            <Grid item xs={12} md={10}>
+                <Typography variant="h4" align="left" gutterBottom>
+                    Meet our team
                 </Typography>
-                <Avatar src={captainImage} alt="Ananya Swaminathan" sx={{ width: 150, height: 150, margin: 2 }} />
-                <Button 
-                    aria-label="linkedin" 
-                    startIcon={<LinkedInIcon />}
-                    sx={{ textTransform: 'none', color: 'text.primary' }}
-                    href="https://www.linkedin.com/in/ananya-swaminathan-9871251b5/"
-                >
-                    Ananya Swaminathan
-                </Button>
-            </Box>
-            <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', marginBottom: 2 }}>
-                <Typography variant="h5" gutterBottom>
-                    Team members
-                </Typography>
-                <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
-                {members.map((member) => (
-                    <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', margin: 2 }} key={member.name}>
-                        <Avatar src={member.image} alt={member.name} sx={{ width: 120, height: 120, margin: 2 }} />
-                        <Button 
-                            aria-label="linkedin" 
-                            startIcon={<LinkedInIcon />}
-                            sx={{ textTransform: 'none', color: 'text.primary' }}
-                            href={member.linkedin}
-                        >
-                            {member.name} 
-                        </Button>
-                    </Box>
-                ))}
+                <Divider sx={{ marginBottom: 2 }} />
+            </Grid>
+            <Grid item xs={12} md={10}>
+                <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', marginBottom: 2 }}>
+                    <Typography variant="h5" gutterBottom>
+                        Captain
+                    </Typography>
+                    <Avatar src={captainImage} alt="Ananya Swaminathan" sx={{ width: 150, height: 150, margin: 2 }} />
+                    <Button 
+                        aria-label="linkedin" 
+                        startIcon={<LinkedInIcon />}
+                        sx={{ textTransform: 'none', color: 'text.primary' }}
+                        href="https://www.linkedin.com/in/ananya-swaminathan-9871251b5/"
+                    >
+                        Ananya Swaminathan
+                    </Button>
                 </Box>
-            </Box>
-        </Paper>
+                <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', marginBottom: 2 }}>
+                    <Typography variant="h5" gutterBottom>
+                        Team members
+                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
+                    {members.map((member) => (
+                        <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', margin: 2 }} key={member.name}>
+                            <Avatar src={member.image} alt={member.name} sx={{ width: 120, height: 120, margin: 2 }} />
+                            <Button 
+                                aria-label="linkedin" 
+                                startIcon={<LinkedInIcon />}
+                                sx={{ textTransform: 'none', color: 'text.primary' }}
+                                href={member.linkedin}
+                            >
+                                {member.name} 
+                            </Button>
+                        </Box>
+                    ))}
+                    </Box>
+                </Box>
+            </Grid>
+        </Grid>
     )
 }
 

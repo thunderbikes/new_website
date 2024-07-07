@@ -37,8 +37,8 @@ export default function Footer() {
         <CssBaseline />
         <AppBar sx={{ top: 'auto', bottom: 0, position: 'relative', bgcolor: 'background.default', paddingTop: 3 }} component="nav" position="fixed">
             <Toolbar>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} sm={4}>
+                <Grid container spacing={2} justifyContent="center">
+                    <Grid item xs={12} md={2}>
                         <img src={logo} height={40} alt="thunderbike-logo" />
                         <Box sx={{ display: 'flex' }}>
                             <IconButton color="black" href='https://www.instagram.com/ubc_thunderbikes/'>
@@ -52,7 +52,7 @@ export default function Footer() {
                             </IconButton>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} md={4}>
                         <Typography variant="h6" color="black">
                             Contact us
                         </Typography>
@@ -72,7 +72,7 @@ export default function Footer() {
                             </ListItemButton>
                         </List>
                     </Grid>
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} md={4}>
                         <Typography variant="h6" color="black">
                             Quick links
                         </Typography>

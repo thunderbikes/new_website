@@ -28,9 +28,8 @@ const itemData = [
 
 function About() {
     return (
-        <Grid container spacing={0}>
-            <Grid item xs={12} md={6}>
-                <Paper elevation={3} sx={{ borderRadius: 0, padding: 3, height: '50vh' }}>
+        <Grid container spacing={0} sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Grid item xs={12} md={5} sx={{ padding: 3 }}>
                     <Typography variant="h4" align="left" gutterBottom>
                         About us
                     </Typography>
@@ -48,12 +47,11 @@ function About() {
                     <Typography variant="body1" align="left" gutterBottom>
                         To encourage people to use bikes as their primary method of transportation.
                     </Typography>
-                </Paper>
             </Grid>
-            <Grid item xs={12} md={6}>
-                <Paper elevation={3} sx={{ borderRadius: 0, height: '50vh' }}>
+            <Grid item xs={12} md={5}>
+                <Paper elevation={3} sx={{ borderRadius: 0, height: '50vh', overflow: 'hidden' }}>
                     <ImageList
-                        sx={{ width: 'auto', height: '100%', margin: 0 }}
+                        sx={{ width: 'auto', height: '100%', margin: 0, overflowY: 'scroll' }}
                         rowHeight={'40vh'}
                         cols={1}
                     >

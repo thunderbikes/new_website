@@ -13,6 +13,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { HashLink as Link } from 'react-router-hash-link';
 import NotFound from "./pages/NotFound";
+import './App.css';
 
 function App() {
   return (

@@ -1,5 +1,4 @@
 import {
-    Paper,
     Typography,
     Divider,
     Grid
@@ -10,20 +9,20 @@ import { sm24_images, ccc_images } from "../StepperImageList";
 
 function Images() {
     return (
-        <Paper elevation={3} sx={{ borderRadius: 0, padding: 3, bgcolor: '#eceff1', marginTop: '10vh' }} id='members'>
-            <Typography variant="h4" align="left" gutterBottom>
-                Image gallery
-            </Typography>
-            <Divider sx={{ marginBottom: 2 }} />
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <ImageStepper images={sm24_images} />
-                </Grid>
-                <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <ImageStepper images={ccc_images} />
-                </Grid>
+        <Grid container spacing={2} sx={{ borderRadius: 0, padding: 3, bgcolor: '#eceff1', marginTop: '10vh' }} justifyContent={'center'}>
+            <Grid item xs={12} md={10}>
+                <Typography variant="h4" align="left" gutterBottom>
+                    Image gallery
+                </Typography>
+                <Divider sx={{ marginBottom: 2 }} />
             </Grid>
-        </Paper>
+            <Grid item xs={12} md={5} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <ImageStepper images={sm24_images} />
+            </Grid>
+            <Grid item xs={12} md={5} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <ImageStepper images={ccc_images} />
+            </Grid>
+        </Grid>
     )
 }
 

@@ -12,7 +12,8 @@ import {
     ListItemText,
     Toolbar,
     Typography,
-    Button
+    Button,
+    Grid
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../images/logo.png';
@@ -66,31 +67,36 @@ function Navbar(props) {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar component="nav" sx={{ bgcolor: 'background.default' }}>
-                <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={handleDrawerToggle}
-                        sx={{ color: 'black', mr: 2, display: { sm: 'none' } }}
-                    >
-                        <MenuIcon size={40} />
-                    </IconButton>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' }, margin: '15px 0' }} component="img" src={logo} height={60} alt="thunderbike-logo" />
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        {navItems.map((item) => (
-                            <Button 
-                                key={item} 
-                                sx={{ color: '#000', px: 3, textTransform: 'none', fontSize: 16 }}
-                                component={Link}
-                                smooth
-                                to={navMap[item]}
+                
+                    <Grid container justifyContent="center">
+                        <Grid item xs={12} md={10}>
+                        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <IconButton
+                                color="inherit"
+                                aria-label="open drawer"
+                                edge="start"
+                                onClick={handleDrawerToggle}
+                                sx={{ color: 'black', mr: 2, display: { sm: 'none' } }}
                             >
-                                <ListItemText primary={item} />
-                            </Button>
-                        ))}
-                    </Box>
-                </Toolbar>
+                                <MenuIcon size={40} />
+                            </IconButton>
+                            <Box sx={{ display: { xs: 'none', sm: 'block' }, margin: '15px 0' }} component="img" src={logo} height={60} alt="thunderbike-logo" />
+                            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                                {navItems.map((item) => (
+                                    <Button 
+                                        key={item} 
+                                        sx={{ color: '#000', px: 3, textTransform: 'none', fontSize: 16 }}
+                                        component={Link}
+                                        smooth
+                                        to={navMap[item]}
+                                    >
+                                        <ListItemText primary={item} />
+                                    </Button>
+                                ))}
+                            </Box>
+                        </Toolbar>
+                        </Grid>
+                    </Grid>
             </AppBar>
             <nav>
                 <Drawer
