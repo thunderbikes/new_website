@@ -157,6 +157,9 @@ function Projects() {
                         </Card>
                     </Grid>
                 ))}
+                <Grid item xs={12} md={10}>
+                    <iframe class="centered rounded" title="Ball BLEND" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height={500} src="https://sketchfab.com/models/6f35855197c548409007d4ecb1d65dfe/embed" />
+                </Grid>
             </Grid>
         </Grid>
     )
