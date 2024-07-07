@@ -12,6 +12,7 @@ import {
     ListItemText,
     Toolbar,
     Typography,
+    Button
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../images/logo.png';
@@ -62,23 +63,23 @@ function Navbar(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box>
+        <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" position="fixed" sx={{ bgcolor: 'background.default' }}>
+            <AppBar component="nav" sx={{ bgcolor: 'background.default' }}>
                 <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
+                        sx={{ color: 'black', mr: 2, display: { sm: 'none' } }}
                     >
-                        <MenuIcon />
+                        <MenuIcon size={40} />
                     </IconButton>
-                    <img src={logo} height={60} alt="thunderbike-logo" style={{ margin: '15px 0' }} />
-                    <Box sx={{ display: 'flex' }}>
+                    <Box sx={{ display: { xs: 'none', sm: 'block' }, margin: '15px 0' }} component="img" src={logo} height={60} alt="thunderbike-logo" />
+                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
-                            <ListItemButton 
+                            <Button 
                                 key={item} 
                                 sx={{ color: '#000', px: 3, textTransform: 'none', fontSize: 16 }}
                                 component={Link}
@@ -86,7 +87,7 @@ function Navbar(props) {
                                 to={navMap[item]}
                             >
                                 <ListItemText primary={item} />
-                            </ListItemButton>
+                            </Button>
                         ))}
                     </Box>
                 </Toolbar>

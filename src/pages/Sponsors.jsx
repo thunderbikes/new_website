@@ -33,13 +33,13 @@ function Sponsors() {
                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <img src={manu} alt="UBC Manufacturing Eng" style={{ width: 400 }} />
                 </Grid>
-                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginY: 4 }}>
+                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginY: 4, flexWrap: 'wrap' }}>
                     <img src={grin} alt="Grin" style={{ height: 80, marginRight: '40px' }} />
                     <img src={solidworks} alt="Solidworks" style={{ height: 50, marginRight: '40px' }} />
                     <img src={applsc} alt="UBC Applied Science" style={{ height: 60, marginRight: '40px' }} />
                     <img src={ubc} alt="UBC" style={{ height: 70 }} />
                 </Grid>
-                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginY: 4 }}>
+                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginY: 4, flexWrap: 'wrap' }}>
                     <img src={bender} alt="Bender" style={{ height: 60, marginRight: '40px' }} />
                     <img src={brenco} alt="Brenco" style={{ height: 70, marginRight: '40px' }} />
                     <img src={ansys} alt="Ansys" style={{ height: 60 }} />

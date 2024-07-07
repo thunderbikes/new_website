@@ -1,41 +1,3 @@
-/*
-import aaran from "../images/members/aaran.jpg";
-import ananya from "../images/members/ananya.jpg";
-import anshul from "../images/members/anshul.jpg";
-import bar from "../images/members/bar.jpg";
-import colson from "../images/members/colson.jpg";
-import connor_block from "../images/members/connor_block.jpg";
-import connor_floyd from "../images/members/connor_floyd.jpg";
-import daen from "../images/members/daen.jpg";
-import deepak from "../images/members/deepak.jpg";
-import defaultpic from "../images/members/defaultpic.jpg";
-import elian from "../images/members/elian.jpg";
-import emilio from "../images/members/emilio.jpg";
-import ethan from "../images/members/ethan.jpg";
-import henry_hui from "../images/members/henry_hui.jpg";
-import henry_wong from "../images/members/henry_wong.jpg";
-import idara from "../images/members/idara.jpg";
-import kimathra from "../images/members/kimathra.jpg";
-import lynn from "../images/members/lynn.jpeg";
-import lyra from "../images/members/lyra.jpeg";
-import marcelo from "../images/members/marcelo.jpg";
-import matthew from "../images/members/matthew.jpg";
-import nathan from "../images/members/nathan.jpg";
-import niharika from "../images/members/niharika.jpg";
-import oliver from "../images/members/oliver.jpg";
-import omar from "../images/members/omar.jpg";
-import peter from "../images/members/peter.jpg";
-import raymond_chen from "../images/members/raymond_chen.jpg";
-import raymond_shen from "../images/members/raymond_shen.jpg";
-import rexton from "../images/members/rexton.jpg";
-import senal from "../images/members/senal.jpg";
-import shawn from "../images/members/shawn.jpg";
-import thomas from "../images/members/thomas.jpg";
-import tristan from "../images/members/tristan.jpg";
-import zaid from "../images/members/zaid.jpg";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-*/
-
 const captainImage = require("./images/members/ananya.jpg");
 const memberImages = {
     'aaran': require("./images/members/aaran.jpg"),
@@ -72,7 +34,6 @@ const memberImages = {
     'thomas': require("./images/members/thomas.jpg"),
     'tristan': require("./images/members/tristan.jpg"),
     'zaid': require("./images/members/zaid.jpg"),
-    'defaultpic': require("./images/members/defaultpic.jpg"),
 };
 
 export { captainImage, memberImages };

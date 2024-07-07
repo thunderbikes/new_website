@@ -29,7 +29,7 @@ const itemData = [
 function About() {
     return (
         <Grid container spacing={0}>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
                 <Paper elevation={3} sx={{ borderRadius: 0, padding: 3, height: '50vh' }}>
                     <Typography variant="h4" align="left" gutterBottom>
                         About us
@@ -50,24 +50,24 @@ function About() {
                     </Typography>
                 </Paper>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6}>
                 <Paper elevation={3} sx={{ borderRadius: 0, height: '50vh' }}>
-                <ImageList
-                    sx={{ width: 'auto', height: '100%', margin: 0 }}
-                    rowHeight={'40vh'}
-                    cols={1}
-                >
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
-                        <img
-                            srcSet={`${item.img}?fit=crop&auto=format&dpr=2 2x`}
-                            src={`${item.img}?fit=crop&auto=format`}
-                            alt={item.title}
-                            loading="lazy"
-                        />
-                    </ImageListItem>
-                ))}
-                </ImageList>
+                    <ImageList
+                        sx={{ width: 'auto', height: '100%', margin: 0 }}
+                        rowHeight={'40vh'}
+                        cols={1}
+                    >
+                    {itemData.map((item) => (
+                        <ImageListItem key={item.img}>
+                            <img
+                                srcSet={`${item.img}?fit=crop&auto=format&dpr=2 2x`}
+                                src={`${item.img}?fit=crop&auto=format`}
+                                alt={item.title}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                    ))}
+                    </ImageList>
                 </Paper>
             </Grid>
         </Grid>

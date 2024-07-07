@@ -106,7 +106,7 @@ function Projects() {
             <Divider sx={{ marginBottom: 2 }} />
             <Grid container spacing={2}>
                 {cards.map((card, index) => (
-                    <Grid item xs={6}>
+                    <Grid item xs={12} md={6}>
                         <Card elevation={3} sx={{ height: 'auto' }}>
                             <CardMedia
                                 component="img"
@@ -114,7 +114,7 @@ function Projects() {
                                 image={card.image}
                                 alt={card.title}
                             />
-                            <CardContent sx={{ height: 200 }}>
+                            <CardContent sx={{ height: { xs: 'auto', md: 200 } }}>
                                 <Typography gutterBottom variant="h5" component="div">
                                     {card.title}
                                 </Typography>
