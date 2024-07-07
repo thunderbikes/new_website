@@ -15,7 +15,7 @@ function Team() {
                     <Typography sx={{ color: '#ffc400', marginBottom: 2 }} variant="h4">
                         Meet our team
                     </Typography>
-                    <Button variant="contained" sx={{ background: 'navy', color: '#fff', margin: '10px', padding: 2, width: 200 }} href="/#/members">
+                    <Button variant="contained" sx={{ background: 'navy', color: '#fff', margin: '10px', padding: 2, width: 200 }} href="/new_website/#/members">
                         See all members
                     </Button>
                 </Box>
