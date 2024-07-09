@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new_website/static/css/main.8eab349a.css",
-    "main.js": "/new_website/static/js/main.fd986106.js",
+    "main.js": "/new_website/static/js/main.1bf69215.js",
     "static/js/453.2973aa2d.chunk.js": "/new_website/static/js/453.2973aa2d.chunk.js",
     "static/media/idara.jpg": "/new_website/static/media/idara.d77993e8550cc9b8b1fc.jpg",
     "static/media/marcelo.jpg": "/new_website/static/media/marcelo.412e2d302302a34cec34.jpg",
@@ -45,7 +45,6 @@
     "static/media/lynn.jpeg": "/new_website/static/media/lynn.2fbf11ef39d3075d7644.jpeg",
     "static/media/SM23.jpg": "/new_website/static/media/SM23.f5e059e3026823eeaab5.jpg",
     "static/media/bike-3.jpeg": "/new_website/static/media/bike-3.f5e059e3026823eeaab5.jpeg",
-    "static/media/banner.jpg": "/new_website/static/media/banner.4319e8bf7c67f90c56a8.jpg",
     "static/media/team.jpeg": "/new_website/static/media/team.2d905adaeec603d54855.jpeg",
     "static/media/front_fairing.jpg": "/new_website/static/media/front_fairing.4b61883b16b4ba7740b2.jpg",
     "static/media/bike1.png": "/new_website/static/media/bike1.91b6f995d4bf406dab37.png",
@@ -82,11 +81,11 @@
     "static/media/altium.svg": "/new_website/static/media/altium.1352942c01364e26bd37a851ed61629a.svg",
     "index.html": "/new_website/index.html",
     "main.8eab349a.css.map": "/new_website/static/css/main.8eab349a.css.map",
-    "main.fd986106.js.map": "/new_website/static/js/main.fd986106.js.map",
+    "main.1bf69215.js.map": "/new_website/static/js/main.1bf69215.js.map",
     "453.2973aa2d.chunk.js.map": "/new_website/static/js/453.2973aa2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8eab349a.css",
-    "static/js/main.fd986106.js"
+    "static/js/main.1bf69215.js"
   ]
 }
