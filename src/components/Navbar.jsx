@@ -66,7 +66,7 @@ function Navbar(props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" sx={{ bgcolor: '#002e5b' }}>
+            <AppBar component="nav" sx={{ bgcolor: '#002e5b' }} elevation={5}>
                     <Grid container justifyContent="center">
                         <Grid item xs={12} md={10}>
                         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
