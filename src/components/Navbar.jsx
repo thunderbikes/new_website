@@ -89,7 +89,7 @@ function Navbar(props) {
                                         smooth
                                         to={navMap[item]}
                                     >
-                                        <Typography variant="body1" sx={{ color: '#ffc400', fontSize: 16, fontWeight: 700 }}>
+                                        <Typography variant="body1" sx={{ color: '#FFF', fontSize: 16, fontWeight: 700 }}>
                                             {item}
                                         </Typography>
                                     </Button>
