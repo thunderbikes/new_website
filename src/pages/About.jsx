@@ -28,25 +28,25 @@ const itemData = [
 
 function About() {
     return (
-        <Grid container spacing={0} sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Grid item xs={12} md={5} sx={{ padding: 3 }}>
-                    <Typography variant="h4" align="left" gutterBottom>
-                        About us
-                    </Typography>
-                    <Divider />
-                    <Typography variant="h5" align="left" color="text.secondary" sx={{ marginTop: 2 }} gutterBottom>
-                        Our mission
-                    </Typography>
-                    <Typography variant="body1" align="left" gutterBottom>
-                        The University of British Columbia ThunderBikes Team is dedicated to designing and racing vehicles in order to demonstrate the performance capability of sustainable transportation while encouraging its use as daily transport.
-                    </Typography>
-                    <br/>
-                    <Typography variant="h5" align="left" color="text.secondary" gutterBottom>
-                        Our vision
-                    </Typography>
-                    <Typography variant="body1" align="left" gutterBottom>
-                        To encourage people to use bikes as their primary method of transportation.
-                    </Typography>
+        <Grid container spacing={0} sx={{ display: 'flex', justifyContent: 'center', bgcolor: '#e8eaf6' }}>
+            <Grid item xs={12} md={5} sx={{ padding: 3, bgcolor: 'background.paper' }}>
+                <Typography variant="h4" align="left" gutterBottom sx={{ color: "#002e5b", fontWeight: 700 }}>
+                    About us
+                </Typography>
+                <Divider color="#002e5b" />
+                <Typography variant="h5" align="left" color="text.secondary" sx={{ marginTop: 2 }} gutterBottom>
+                    Our mission
+                </Typography>
+                <Typography variant="body1" align="left" gutterBottom>
+                    The University of British Columbia ThunderBikes Team is dedicated to designing and racing vehicles in order to demonstrate the performance capability of sustainable transportation while encouraging its use as daily transport.
+                </Typography>
+                <br/>
+                <Typography variant="h5" align="left" color="text.secondary" gutterBottom>
+                    Our vision
+                </Typography>
+                <Typography variant="body1" align="left" gutterBottom>
+                    To encourage people to use bikes as their primary method of transportation.
+                </Typography>
             </Grid>
             <Grid item xs={12} md={5}>
                 <Paper elevation={3} sx={{ borderRadius: 0, height: '50vh', overflow: 'hidden' }}>

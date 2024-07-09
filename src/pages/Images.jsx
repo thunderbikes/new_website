@@ -5,22 +5,19 @@ import {
 } from "@mui/material"
 import React from "react";
 import ImageStepper from "../components/ImageStepper";
-import { sm24_images, ccc_images } from "../StepperImageList";
+import { imgList } from "../StepperImageList";
 
 function Images() {
     return (
-        <Grid container spacing={2} sx={{ borderRadius: 0, padding: 3, bgcolor: '#eceff1', marginTop: '10vh' }} justifyContent={'center'}>
+        <Grid container spacing={2} sx={{ borderRadius: 0, padding: 3, bgcolor: '#e8eaf6', marginTop: '10vh' }} justifyContent={'center'}>
             <Grid item xs={12} md={10}>
-                <Typography variant="h4" align="left" gutterBottom>
+                <Typography variant="h4" align="left" gutterBottom sx={{ color: "#002e5b", fontWeight: 700 }}>
                     Image gallery
                 </Typography>
-                <Divider sx={{ marginBottom: 2 }} />
+                <Divider color="#002e5b" />
             </Grid>
-            <Grid item xs={12} md={5} sx={{ display: 'flex', justifyContent: 'center' }}>
-                <ImageStepper images={sm24_images} />
-            </Grid>
-            <Grid item xs={12} md={5} sx={{ display: 'flex', justifyContent: 'center' }}>
-                <ImageStepper images={ccc_images} />
+            <Grid item xs={12} md={10} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <ImageStepper images={imgList} />
             </Grid>
         </Grid>
     )

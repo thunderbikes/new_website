@@ -257,10 +257,10 @@ function Members() {
     return (
         <Grid container sx={{ borderRadius: 0, padding: 3, bgcolor: '#eceff1', marginTop: '10vh' }} justifyContent={'center'}>
             <Grid item xs={12} md={10}>
-                <Typography variant="h4" align="left" gutterBottom>
+                <Typography variant="h4" align="left" gutterBottom sx={{ color: "#002e5b", fontWeight: 700 }}>
                     Meet our team
                 </Typography>
-                <Divider sx={{ marginBottom: 2 }} />
+                <Divider sx={{ marginBottom: 2 }} color="#002e5b" />
             </Grid>
             <Grid item xs={12} md={10}>
                 <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', marginBottom: 2 }}>

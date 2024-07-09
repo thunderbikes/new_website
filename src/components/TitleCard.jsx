@@ -17,7 +17,7 @@ function TitleCard() {
                 <Typography sx={{ color: '#fff', textAlign: 'center', padding: '10px 0' }} variant="h5">
                     Interested in sustainable transportation, electric vehicles, or racing?
                 </Typography>
-                <Button variant="contained" sx={{ background: 'navy', color: '#fff', margin: '10px', padding: 2, width: 200 }} href="https://linktr.ee/ubcthunderbikes">
+                <Button variant="contained" sx={{ background: '#002e5b', color: '#fff', margin: '10px', padding: 2, width: 200, textTransform: 'none', fontWeight: 700, fontSize: 16 }} href="https://linktr.ee/ubcthunderbikes">
                     Join us
                 </Button>
             </Box>

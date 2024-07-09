@@ -24,7 +24,7 @@ import CCC_5 from './images/ccc/CCC_5.jpg'
 import CCC_Decal_1 from './images/ccc/CCC_Decal_1.jpg'
 import CCC_Decal_2 from './images/ccc/CCC_Decal_2.jpg'
 
-const sm24_images = [
+const imgList = [
   {
     label: 'Super Motorsport-24',
     imgPath: sm24
@@ -93,9 +93,6 @@ const sm24_images = [
     label: 'Battery pack',
     imgPath: SM21battery3,
   },
-];
-
-const ccc_images = [
   {
     label: 'Campus Commuter Challenge',
     imgPath: CCC_1
@@ -126,4 +123,4 @@ const ccc_images = [
   },
 ];
 
-export { sm24_images, ccc_images };
+export { imgList };

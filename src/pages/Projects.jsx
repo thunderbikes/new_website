@@ -9,7 +9,7 @@ import {
     IconButton,
     Collapse,
     Divider,
-    Chip
+    Chip,
 } from "@mui/material"
 import sm24 from "../images/sm-24.png"
 import ccc from "../images/ccc.png"
@@ -102,65 +102,60 @@ function Projects() {
     };
 
     return (
-        <Grid container sx={{ borderRadius: 0, padding: 3, bgcolor: '#eceff1' }} justifyContent="center">
-            <Grid item xs={12} md={10}>
-                <Typography variant="h4" align="left" gutterBottom>
+        <Grid container sx={{ borderRadius: 0, bgcolor: '#e8eaf6' }} justifyContent="center">
+            <Grid item xs={12} md={10} sx={{ padding: 3, bgcolor: 'background.paper' }}>
+                <Typography variant="h4" align="left" gutterBottom sx={{ color: "#002e5b", fontWeight: 700 }}>
                     Our projects
                 </Typography>
-                <Divider sx={{ marginBottom: 2 }} />
+                <Divider color="#002e5b" />
             </Grid>
-            <Grid container spacing={2} justifyContent="center">
-                {cards.map((card, index) => (
-                    <Grid item xs={12} md={5}>
-                        <Card elevation={3} sx={{ height: 'auto' }}>
-                            <CardMedia
-                                component="img"
-                                height="330"
-                                image={card.image}
-                                alt={card.title}
-                            />
-                            <CardContent sx={{ height: { xs: 'auto', md: card.height } }}>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    {card.title}
-                                </Typography>
-                                <Typography variant="body1" color="text.secondary">
-                                    {card.description}
+            {cards.map((card, index) => (
+                <Grid item xs={12} md={5} sx={{ padding: 2, bgcolor: 'background.paper' }}>
+                    <Card elevation={5} sx={{ height: 'auto', borderRadius: 5 }}>
+                        <CardMedia
+                            component="img"
+                            height="330"
+                            image={card.image}
+                            alt={card.title}
+                        />
+                        <CardContent sx={{ height: { xs: 'auto', md: card.height } }}>
+                            <Typography gutterBottom variant="h5" component="div">
+                                {card.title}
+                            </Typography>
+                            <Typography variant="body1" color="text.secondary">
+                                {card.description}
+                            </Typography>
+                        </CardContent>
+                        <CardActions disableSpacing>
+                            {card.isCurrent ? (
+                                <Chip label="Current" sx={{ bgcolor: '#002e5b', color: 'white', padding: 2, margin: 1 }} />
+                            ) : (
+                                <Chip label="Past" sx={{ bgcolor: '#ffc400', color: 'black', padding: 2, margin: 1 }} />
+                            )}
+                            <ExpandMore
+                                expand={expanded[index]}
+                                onClick={() => handleExpandClick(index)}
+                                aria-expanded={expanded[index]}
+                                aria-label="show more"
+                            >
+                                <ExpandMoreIcon />
+                            </ExpandMore>
+                        </CardActions>
+                        <Collapse in={expanded[index]} timeout="auto" unmountOnExit>
+                            <CardContent>
+                                <Typography variant="h6">Objectives</Typography>
+                                <Typography variant="body1" sx={{ padding: 2 }} color="text.secondary">
+                                    <ul style={{ padding: 0, margin: 0 }}>
+                                        {card.objectives.map((objective) => (
+                                            <li>{objective}</li>
+                                        ))}
+                                    </ul>
                                 </Typography>
                             </CardContent>
-                            <CardActions disableSpacing>
-                                {card.isCurrent ? (
-                                    <Chip label="Current" sx={{ bgcolor: 'navy', color: 'white', padding: 2 }} />
-                                ) : (
-                                    <Chip label="Past" sx={{ bgcolor: '#ffc400', color: 'black', padding: 2 }} />
-                                )}
-                                <ExpandMore
-                                    expand={expanded[index]}
-                                    onClick={() => handleExpandClick(index)}
-                                    aria-expanded={expanded[index]}
-                                    aria-label="show more"
-                                >
-                                    <ExpandMoreIcon />
-                                </ExpandMore>
-                            </CardActions>
-                            <Collapse in={expanded[index]} timeout="auto" unmountOnExit>
-                                <CardContent>
-                                    <Typography variant="h6">Objectives</Typography>
-                                    <Typography variant="body1" sx={{ padding: 2 }} color="text.secondary">
-                                        <ul style={{ padding: 0, margin: 0 }}>
-                                            {card.objectives.map((objective) => (
-                                                <li>{objective}</li>
-                                            ))}
-                                        </ul>
-                                    </Typography>
-                                </CardContent>
-                            </Collapse>
-                        </Card>
-                    </Grid>
-                ))}
-                <Grid item xs={12} md={10}>
-                    <iframe class="centered rounded" title="Ball BLEND" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height={500} src="https://sketchfab.com/models/6f35855197c548409007d4ecb1d65dfe/embed" />
+                        </Collapse>
+                    </Card>
                 </Grid>
-            </Grid>
+            ))}
         </Grid>
     )
 }

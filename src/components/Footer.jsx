@@ -35,53 +35,53 @@ export default function Footer() {
   return (
     <Box>
         <CssBaseline />
-        <AppBar sx={{ top: 'auto', bottom: 0, position: 'relative', bgcolor: 'background.default', paddingTop: 3 }} component="nav" position="fixed">
+        <AppBar sx={{ top: 'auto', bottom: 0, position: 'relative', bgcolor: '#002e5b', paddingTop: 3 }} component="nav" position="fixed">
             <Toolbar>
                 <Grid container spacing={2} justifyContent="center">
                     <Grid item xs={12} md={2}>
                         <img src={logo} height={40} alt="thunderbike-logo" />
                         <Box sx={{ display: 'flex' }}>
-                            <IconButton color="black" href='https://www.instagram.com/ubc_thunderbikes/'>
-                                <InstagramIcon />
+                            <IconButton href='https://www.instagram.com/ubc_thunderbikes/'>
+                                <InstagramIcon sx={{ color: '#ffc400' }} />
                             </IconButton>
-                            <IconButton color="black" href='https://www.facebook.com/UBCThunderBikes/'>
-                                <FacebookIcon />
+                            <IconButton href='https://www.facebook.com/UBCThunderBikes/'>
+                                <FacebookIcon sx={{ color: '#ffc400' }} />
                             </IconButton>
-                            <IconButton color="black" href='https://www.linkedin.com/company/ubc-thunderbikes/'>
-                                <LinkedInIcon />
+                            <IconButton href='https://www.linkedin.com/company/ubc-thunderbikes/'>
+                                <LinkedInIcon sx={{ color: '#ffc400' }} />
                             </IconButton>
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <Typography variant="h6" color="black">
+                        <Typography variant="h6" sx={{ color: '#ffc400', fontWeight: 700 }}>
                             Contact us
                         </Typography>
-                        <hr />
+                        <Divider color="ffc400" sx={{ marginTop: 2 }} />
                         <List component="nav" aria-label="main mailbox folders">
                             <ListItemButton>
                                 <ListItemIcon>
-                                    <BusinessIcon />
+                                    <BusinessIcon sx={{ color: '#FFF' }} />
                                 </ListItemIcon>
-                                <ListItemText primary="2345 E Mall, Vancouver B.C., Canada" sx={{ color: 'black' }} />
+                                <ListItemText primary="2345 E Mall, Vancouver B.C., Canada" sx={{ color: '#FFF' }} />
                             </ListItemButton>
                             <ListItemButton href="mailto:thunderbikesdesign@gmail.com">
                                 <ListItemIcon>
-                                    <AlternateEmailIcon />
+                                    <AlternateEmailIcon sx={{ color: '#FFF' }} />
                                 </ListItemIcon>
-                                <ListItemText primary="thunderbikesdesign@gmail.com" sx={{ color: 'black' }} />
+                                <ListItemText primary="thunderbikesdesign@gmail.com" sx={{ color: '#FFF' }} />
                             </ListItemButton>
                         </List>
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <Typography variant="h6" color="black">
+                        <Typography variant="h6" sx={{ color: '#ffc400', fontWeight: 700 }}>
                             Quick links
                         </Typography>
-                        <hr />
+                        <Divider color="ffc400" sx={{ marginTop: 2 }} />
                         <List component="nav" aria-label="main mailbox folders">
                             {navItems.map((item) => (
                                 <ListItemButton 
                                     key={item} 
-                                    sx={{ color: '#000', px: 3, textTransform: 'none', fontSize: 16 }}
+                                    sx={{ color: '#FFF', px: 3, textTransform: 'none', fontSize: 16 }}
                                     component={Link}
                                     smooth
                                     to={navMap[item]}
@@ -93,8 +93,8 @@ export default function Footer() {
                     </Grid>
                 </Grid>
             </Toolbar>
-            <Divider />
-            <Typography variant="body2" color="black" align="center" sx={{ padding: 2 }}>
+            <Divider color="#ffc400" />
+            <Typography variant="body2" color="#ffc400" align="center" sx={{ padding: 2 }}>
                 © 2024 UBC Thunderbikes
             </Typography>
         </AppBar>

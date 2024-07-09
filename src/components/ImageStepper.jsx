@@ -1,82 +1,26 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 
-function ImageStepper({ images }) {
-  const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
-  const maxSteps = images.length;
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
+export default function ImageStepper({ images }) {
   return (
-    <Box sx={{ width: '100%', flexGrow: 1 }} elevation={3}>
-      <Paper
-        square
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          height: 50,
-          pl: 2,
-          bgcolor: 'background.default',
-        }}
-      >
-        <Typography>{images[activeStep].label}</Typography>
-      </Paper>
-      <Box 
-        sx={{ 
-          height: 500,
-          display: 'block',
-          overflow: 'hidden',
-          width: '100%',
-        }}
-        component="img"
-        src={images[activeStep].imgPath}
-        alt={images[activeStep].label}
-      />
-      <MobileStepper
-        steps={maxSteps}
-        position="static"
-        activeStep={activeStep}
-        nextButton={
-          <Button
-            size="small"
-            onClick={handleNext}
-            disabled={activeStep === maxSteps - 1}
-          >
-            Next
-            {theme.direction === 'rtl' ? (
-              <KeyboardArrowLeft />
-            ) : (
-              <KeyboardArrowRight />
-            )}
-          </Button>
-        }
-        backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === 'rtl' ? (
-              <KeyboardArrowRight />
-            ) : (
-              <KeyboardArrowLeft />
-            )}
-            Back
-          </Button>
-        }
-      />
-    </Box>
+    <ImageList cols={3} gap={10}>
+      {images.map((item) => (
+        <ImageListItem key={item.img}>
+          <img
+            srcSet={`${item.imgPath}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            src={`${item.imgPath}?w=248&fit=crop&auto=format`}
+            alt={item.label}
+            loading="lazy"
+            style={{ borderRadius: 20 }}
+          />
+          <ImageListItemBar
+            title={item.label}
+            style={{ borderBottomLeftRadius: 20, borderBottomRightRadius: 20 }}
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>
   );
 }
-
-export default ImageStepper;

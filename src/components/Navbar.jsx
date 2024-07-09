@@ -66,8 +66,7 @@ function Navbar(props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" sx={{ bgcolor: 'background.default' }}>
-                
+            <AppBar component="nav" sx={{ bgcolor: '#002e5b' }}>
                     <Grid container justifyContent="center">
                         <Grid item xs={12} md={10}>
                         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -85,12 +84,14 @@ function Navbar(props) {
                                 {navItems.map((item) => (
                                     <Button 
                                         key={item} 
-                                        sx={{ color: '#000', px: 3, textTransform: 'none', fontSize: 16 }}
+                                        sx={{ px: 3, textTransform: 'none' }}
                                         component={Link}
                                         smooth
                                         to={navMap[item]}
                                     >
-                                        <ListItemText primary={item} />
+                                        <Typography variant="body1" sx={{ color: '#ffc400', fontSize: 16, fontWeight: 700 }}>
+                                            {item}
+                                        </Typography>
                                     </Button>
                                 ))}
                             </Box>

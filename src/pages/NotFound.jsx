@@ -3,7 +3,7 @@ import React from "react"
 
 function NotFound() {
     return (
-        <Paper elevation={3} sx={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#eceff1', flexDirection: 'column' }}>
+        <Paper elevation={3} sx={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#e8eaf6', flexDirection: 'column' }}>
             <Typography variant="h1" align="center" color="text.secondary">
                 404
             </Typography>
