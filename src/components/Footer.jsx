@@ -18,7 +18,7 @@ import {
     ListItemIcon,
     ListItemText
 } from '@mui/material';
-import logo from '../images/logo.png';
+import logo from '../images/White_Full.png';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const navItems = ['About us', 'Our projects', 'Images', 'Meet our team', 'Sponsors', 'Contact us'];
@@ -39,7 +39,7 @@ export default function Footer() {
             <Toolbar>
                 <Grid container spacing={2} justifyContent="center">
                     <Grid item xs={12} md={2}>
-                        <img src={logo} height={40} alt="thunderbike-logo" />
+                        <img src={logo} height={80} alt="thunderbike-logo" />
                         <Box sx={{ display: 'flex' }}>
                             <IconButton href='https://www.instagram.com/ubc_thunderbikes/'>
                                 <InstagramIcon sx={{ color: '#ffc400' }} />

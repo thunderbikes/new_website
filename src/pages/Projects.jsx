@@ -12,7 +12,7 @@ import {
     Chip,
 } from "@mui/material"
 import sm24 from "../images/sm-24.png"
-import ccc from "../images/ccc.png"
+import ccc from "../images/ccc/CCC_1.jpg"
 import lmk4 from "../images/lmk4.png"
 import ts1 from "../images/ts-1.png"
 import { styled } from '@mui/material/styles';
@@ -103,14 +103,14 @@ function Projects() {
 
     return (
         <Grid container sx={{ borderRadius: 0, bgcolor: '#e8eaf6' }} justifyContent="center">
-            <Grid item xs={12} md={10} sx={{ padding: 3, bgcolor: 'background.paper' }}>
-                <Typography variant="h4" align="left" gutterBottom sx={{ color: "#002e5b", fontWeight: 700 }}>
+            <Grid item xs={12} md={10} sx={{ bgcolor: 'background.paper' }}>
+                <Typography variant="h4" align="left" gutterBottom sx={{ color: "#002e5b", fontWeight: 700, paddingX: 3 }}>
                     Our projects
                 </Typography>
-                <Divider color="#002e5b" />
+                <Divider color="#002e5b" sx={{ marginX: 3 }} />
             </Grid>
             {cards.map((card, index) => (
-                <Grid item xs={12} md={5} sx={{ padding: 2, bgcolor: 'background.paper' }}>
+                <Grid item xs={12} md={5} sx={{ padding: 3, bgcolor: 'background.paper' }}>
                     <Card elevation={5} sx={{ height: 'auto', borderRadius: 5 }}>
                         <CardMedia
                             component="img"

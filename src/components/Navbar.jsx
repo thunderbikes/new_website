@@ -79,7 +79,7 @@ function Navbar(props) {
                             >
                                 <MenuIcon size={40} />
                             </IconButton>
-                            <Box sx={{ display: { xs: 'none', sm: 'block' }, margin: '15px 0' }} component="img" src={logo} height={60} alt="thunderbike-logo" />
+                            <Box sx={{ display: { xs: 'none', sm: 'block' }, margin: '10px 0' }} component="img" src={logo} height={70} alt="thunderbike-logo" />
                             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                                 {navItems.map((item) => (
                                     <Button 
