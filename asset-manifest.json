@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new_website/static/css/main.8eab349a.css",
-    "main.js": "/new_website/static/js/main.1bf69215.js",
+    "main.js": "/new_website/static/js/main.6c51727b.js",
     "static/js/453.2973aa2d.chunk.js": "/new_website/static/js/453.2973aa2d.chunk.js",
     "static/media/idara.jpg": "/new_website/static/media/idara.d77993e8550cc9b8b1fc.jpg",
     "static/media/marcelo.jpg": "/new_website/static/media/marcelo.412e2d302302a34cec34.jpg",
@@ -44,14 +44,11 @@
     "static/media/frame_assembly_1.jpg": "/new_website/static/media/frame_assembly_1.fc9dd6ae1b134ed298de.jpg",
     "static/media/lynn.jpeg": "/new_website/static/media/lynn.2fbf11ef39d3075d7644.jpeg",
     "static/media/SM23.jpg": "/new_website/static/media/SM23.f5e059e3026823eeaab5.jpg",
-    "static/media/bike-3.jpeg": "/new_website/static/media/bike-3.f5e059e3026823eeaab5.jpeg",
     "static/media/team.jpeg": "/new_website/static/media/team.2d905adaeec603d54855.jpeg",
     "static/media/front_fairing.jpg": "/new_website/static/media/front_fairing.4b61883b16b4ba7740b2.jpg",
-    "static/media/bike1.png": "/new_website/static/media/bike1.91b6f995d4bf406dab37.png",
     "static/media/lmk4.png": "/new_website/static/media/lmk4.91b6f995d4bf406dab37.png",
     "static/media/CCC_3.jpg": "/new_website/static/media/CCC_3.e98ae18d407c078b687b.jpg",
     "static/media/CCC_1.jpg": "/new_website/static/media/CCC_1.2ed27a274b0daa6d6aea.jpg",
-    "static/media/bike-2.jpeg": "/new_website/static/media/bike-2.2ed27a274b0daa6d6aea.jpeg",
     "static/media/CCC_2.jpg": "/new_website/static/media/CCC_2.48f5537f17f0915bbbe8.jpg",
     "static/media/sm-24.png": "/new_website/static/media/sm-24.c429c20a0cc0be368dc3.png",
     "static/media/vacuum_infusion.jpg": "/new_website/static/media/vacuum_infusion.4259d16ba8913e20a993.jpg",
@@ -59,7 +56,6 @@
     "static/media/lyra.jpeg": "/new_website/static/media/lyra.ee4be319f30d1b499c28.jpeg",
     "static/media/SM21frame.jpg": "/new_website/static/media/SM21frame.f456f270ce56d6cbd376.jpg",
     "static/media/front_fairing_layup.jpg": "/new_website/static/media/front_fairing_layup.27835c67388c9cc9d1e7.jpg",
-    "static/media/ccc.png": "/new_website/static/media/ccc.9a12a41e17629bfcc10f.png",
     "static/media/SM21lab1.jpg": "/new_website/static/media/SM21lab1.901ee8d51946aeeffe6d.jpg",
     "static/media/SM21battery1.jpg": "/new_website/static/media/SM21battery1.cccb3492ff35c87c8f57.jpg",
     "static/media/SM21battery3.jpg": "/new_website/static/media/SM21battery3.b13ce6b1c09d29aae43d.jpg",
@@ -67,25 +63,26 @@
     "static/media/SM21lab2.jpg": "/new_website/static/media/SM21lab2.75f72ae3831f291a7f8e.jpg",
     "static/media/CCC_Decal_2.jpg": "/new_website/static/media/CCC_Decal_2.2ae67b5a13e16257b373.jpg",
     "static/media/ts-1.png": "/new_website/static/media/ts-1.ea93ae3cee1f54eb7152.png",
-    "static/media/logo.png": "/new_website/static/media/logo.d92f1540dc83661a71d1.png",
     "static/media/tail_fairing_1.jpeg": "/new_website/static/media/tail_fairing_1.3f3adec25751c5180afa.jpeg",
     "static/media/grin.svg": "/new_website/static/media/grin.d4d5567f702537156cfa3f3c3cb941de.svg",
     "static/media/ansys.svg": "/new_website/static/media/ansys.93c5b5c0097932246c74e88bacc2d406.svg",
     "static/media/dff.svg": "/new_website/static/media/dff.371b347aca1f578e1347a07df3a6a963.svg",
+    "static/media/White_Full.png": "/new_website/static/media/White_Full.fe6387b203b80ae4d4ac.png",
     "static/media/manu.svg": "/new_website/static/media/manu.22dbc340c2ba98e7c38dfb4e9176b0c5.svg",
     "static/media/ubc-logo.png": "/new_website/static/media/ubc-logo.38b92b5a17f5e5cb3287.png",
     "static/media/ubc-applied-sciences-footer-logo.png": "/new_website/static/media/ubc-applied-sciences-footer-logo.6b266133a5c0c032df90.png",
+    "static/media/logo.png": "/new_website/static/media/logo.095721b5c64bd360faae.png",
     "static/media/brenco.svg": "/new_website/static/media/brenco.ba35ccd0064d785ec40b05aedb04bd6a.svg",
     "static/media/bender.svg": "/new_website/static/media/bender.9d7444829432da5a10531b9b1dc2e27d.svg",
     "static/media/solidworks.svg": "/new_website/static/media/solidworks.992bcc4c77b558d1da88b353470e6475.svg",
     "static/media/altium.svg": "/new_website/static/media/altium.1352942c01364e26bd37a851ed61629a.svg",
     "index.html": "/new_website/index.html",
     "main.8eab349a.css.map": "/new_website/static/css/main.8eab349a.css.map",
-    "main.1bf69215.js.map": "/new_website/static/js/main.1bf69215.js.map",
+    "main.6c51727b.js.map": "/new_website/static/js/main.6c51727b.js.map",
     "453.2973aa2d.chunk.js.map": "/new_website/static/js/453.2973aa2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8eab349a.css",
-    "static/js/main.1bf69215.js"
+    "static/js/main.6c51727b.js"
   ]
 }
